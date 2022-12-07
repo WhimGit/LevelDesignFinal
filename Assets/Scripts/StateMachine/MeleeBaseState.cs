@@ -27,7 +27,7 @@ public class MeleeBaseState : State
         {
             Attack();
         }
-        if (Input.GetMouseButton(0))
+        if (Input.GetKey(KeyCode.E))
         {
             AttackPressedTimer = 2;
         }
