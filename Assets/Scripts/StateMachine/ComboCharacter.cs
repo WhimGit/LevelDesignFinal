@@ -13,7 +13,7 @@ public class ComboCharacter : MonoBehaviour
     }
     private void Update()
     {
-        if(Input.GetKey(KeyCode.E) && meleeStateMachine.CurrentState.GetType() == typeof(IdleCombatState))
+        if(Input.GetMouseButton(0) && meleeStateMachine.CurrentState.GetType() == typeof(IdleCombatState))
         {
             meleeStateMachine.SetNextState(new GroundEntryState());
         }

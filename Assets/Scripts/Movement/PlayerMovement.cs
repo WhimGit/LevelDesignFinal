@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+        
         horizontal = Input.GetAxisRaw("Horizontal");
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
@@ -54,4 +56,6 @@ public class PlayerMovement : MonoBehaviour
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
+
+    
 }

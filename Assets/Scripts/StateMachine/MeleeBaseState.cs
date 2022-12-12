@@ -27,7 +27,7 @@ public class MeleeBaseState : State
         {
             Attack();
         }
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetMouseButton(0))
         {
             AttackPressedTimer = 2;
         }
@@ -54,7 +54,6 @@ public class MeleeBaseState : State
                 TeamComponent hitTeamComponent = collidersToDamage[i].GetComponentInChildren<TeamComponent>();
                 if(hitTeamComponent && hitTeamComponent.teamIndex == TeamIndex.Enemy)
                 {
-                    Debug.Log("Enemy damaged");
                     collidersDamaged.Add(collidersToDamage[i]);
                     hitTeamComponent.gameObject.GetComponent<TeamComponent>().TakeDamage(attackDmg);
                 }

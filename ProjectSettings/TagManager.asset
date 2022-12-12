@@ -42,14 +42,17 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 2034849949
+    uniqueID: 3574994667
     locked: 0
-  - name: Foreground
-    uniqueID: 195957271
+  - name: Houses
+    uniqueID: 4056079503
     locked: 0
-  - name: NPCs
-    uniqueID: 1175460515
+  - name: Enemies
+    uniqueID: 1710701341
     locked: 0
   - name: Player
-    uniqueID: 113518379
+    uniqueID: 3997511213
+    locked: 0
+  - name: Foreground
+    uniqueID: 2679695813
     locked: 0
